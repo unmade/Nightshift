@@ -1,0 +1,159 @@
+:root {
+  --bg-color: rgb(40, 40, 40);
+  --bg-dark-color: rgb(32, 33, 36);
+  --text-color: rgba(255, 255, 255, 0.78);
+  --muted-text-color: #72747c;
+/*  --link-color: rgb(65, 141, 209);*/
+  --link-color: rgb(138, 181,248);
+  --border-color: rgb(73, 73, 73);
+}
+
+
+body {
+    background-color: var(--bg-color) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+a {
+    color: var(--link-color) !important;
+    border-color: var(--border-color) !important;
+}
+
+h1, h2, h4 {
+    color: var(--text-color) !important;
+}
+
+input {
+    color: var(--text-color) !important;
+}
+
+input[type="submit"] {
+    background: rgb(50, 50, 50) !important;
+    border-color: var(--border-color) !important;
+}
+
+/* Main Page */
+
+#gb a {
+    color: var(--text-color) !important;
+}
+
+/*#searchform form div:last-child div:first-child div {*/
+/*    background-color: var(--border-color) !important;*/
+/*    border-color: var(--border-color) !important;*/
+/*}*/
+/**/
+/*#searchform form div:last-child div:first-of-type div:nth-of-type(2) {*/
+/*    background: none !important;*/
+/*}*/
+/**/
+/*#searchform form div:last-child div:first-of-type div:nth-of-type(2) div:nth-of-type(2) {*/
+/*    background: var(--border-color) !important;*/
+/*}*/
+/**/
+/*#searchform form div:last-child div:first-of-type div:nth-of-type(2) div:nth-of-type(2) div {*/
+/*    background: none !important;*/
+/*    color: var(--text-color) !important;*/
+/*}*/
+/**/
+/*#searchform form div:last-child div:first-child div:last-child {*/
+/*    background: none !important;*/
+/*}*/
+/**/
+/*#searchform form div:last-child div:first-child > div:first-of-type div {*/
+/*    background: none !important;*/
+/*}*/
+
+#searchform .RNNXgb {
+    background-color: var(--border-color) !important;
+    border-color: var(--border-color) !important;
+}
+
+#searchform .aajZCb {
+    background-color: var(--border-color) !important;
+    border-color: var(--border-color) !important;
+}
+
+#searchform .sbl1 {
+    color: var(--text-color) !important;
+}
+
+#searchform .sbl1p {
+    color: rgb(204, 153, 204) !important;
+}
+
+#fbar {
+    background-color: var(--bg-dark-color) !important;
+    border-color: var(--border-color) !important;
+}
+
+/* Search Results */
+
+.sfbgg {
+    background-color: var(--bg-dark-color) !important;
+}
+
+.minidiv .sfbg {
+    background: var(--bg-dark-color) !important;
+}
+
+#hdtbSum {
+    background: var(--bg-dark-color) !important;
+}
+
+#hdtbSum a {
+    color: var(--text-color) !important;
+}
+
+body.vasq #hdtb-msb .hdtb-mitem.hdtb-msel {
+    color: var(--text-color) !important;
+}
+
+#hdtb {
+    border-color: var(--border-color) !important;
+}
+
+.s {
+    color: rgba(114, 116, 124, 0.8) !important;
+}
+
+.s .st em, .st.s.std em {
+    color: var(--muted-text-color) !important;
+}
+
+.a, cite, cite a:link, cite a:visited, .cite, .cite:link, #nygTcd>i, .bc a:link {
+    color: var(--muted-text-color) !important;
+}
+
+.GHDvEf, .GHDvEf:hover, .GHDvEf.selected, .GHDvEf.selected:hover {
+    background: none !important;
+}
+
+.action-menu .mn-dwn-arw {
+    border-color: var(--muted-text-color) transparent !important;
+}
+
+.kp-blk {
+    border-color: var(--border-color) !important;
+}
+
+.cbphWd {
+    border-top: 1px solid rgba(73, 73, 73, .5);
+}
+
+#brs .med {
+    color: var(--text-color) !important;
+}
+
+#foot .AaVjTc .YyVfkd {
+    color: var(--text-color) !important;
+}
+
+#Wprf1b {
+    color: var(--text-color) !important;
+}
+
+.fbar a {
+    color: var(--muted-text-color) !important;
+}

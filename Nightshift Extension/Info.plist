@@ -28,6 +28,14 @@
 		<array>
 			<dict>
 				<key>Style Sheet</key>
+				<string>google-dark.css</string>
+				<key>Allowed URL Patterns</key>
+				<array>
+					<string>https://*.google.com/*</string>
+				</array>
+			</dict>
+			<dict>
+				<key>Style Sheet</key>
 				<string>github-dark.css</string>
 				<key>Allowed URL Patterns</key>
 				<array>
