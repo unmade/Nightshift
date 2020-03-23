@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		747570B924293E0500A9A28F /* github-dark.css in Resources */ = {isa = PBXBuildFile; fileRef = 747570B824293E0500A9A28F /* github-dark.css */; };
 		74F0A3352428AA6E00D78800 /* Nightshift.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 74F0A3342428AA6E00D78800 /* Nightshift.entitlements */; };
 		74F0A3372428AA6E00D78800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0A3362428AA6E00D78800 /* AppDelegate.swift */; };
 		74F0A33A2428AA6E00D78800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F0A3382428AA6E00D78800 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		747570B824293E0500A9A28F /* github-dark.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "github-dark.css"; sourceTree = "<group>"; };
 		74F0A3312428AA6E00D78800 /* Nightshift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nightshift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F0A3342428AA6E00D78800 /* Nightshift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nightshift.entitlements; sourceTree = "<group>"; };
 		74F0A3362428AA6E00D78800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				74F0A3542428AA7200D78800 /* script.js */,
 				74F0A3562428AA7200D78800 /* ToolbarItemIcon.pdf */,
 				74F0A3582428AA7200D78800 /* Nightshift_Extension.entitlements */,
+				747570B824293E0500A9A28F /* github-dark.css */,
 			);
 			path = "Nightshift Extension";
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74F0A3572428AA7200D78800 /* ToolbarItemIcon.pdf in Resources */,
+				747570B924293E0500A9A28F /* github-dark.css in Resources */,
 				74F0A3522428AA7200D78800 /* SafariExtensionViewController.xib in Resources */,
 				74F0A3552428AA7200D78800 /* script.js in Resources */,
 			);
