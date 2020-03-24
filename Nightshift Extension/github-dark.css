@@ -1,12 +1,21 @@
 :root {
-/*  --bg-color: #303336;*/
   --bg-color: rgb(40, 40, 40);
   --bg-dark-color: rgb(30, 30, 30);
+  --bg-light-color: rgb(50, 50, 50);
   --text-color: rgba(255, 255, 255, 0.78);
   --muted-text-color: #72747c;
-/*  --link-color: rgb(90, 200, 250);*/
-  --link-color: rgb(65, 141, 209);
+  --link-color: rgb(102,153,204);
   --border-color: rgb(73, 73, 73);
+  --inner-border-color: rgba(73, 73, 73, .5);
+  --bg-code-color: #2F3134;
+  --code-blue: rgb(102,153,204);
+  --code-magenta: rgb(204, 153, 204);
+  --code-yellow: rgb(255, 204, 102);
+  --code-green: #3BB15A;
+  --code-red: #E7524B;
+  --topic-bg-color: rgba(65, 141, 209, 0.15);
+  --topic-bg-hover: rgba(65, 141, 209, 0.25);
+  --hover-color: #0366d6;
 }
 
 
@@ -33,7 +42,7 @@
     }
 
     .bg-blue-light {
-        background-color: rgb(50, 50, 50) !important;
+        background-color: var(--bg-light-color) !important;
     }
     
     .text-gray {
@@ -77,7 +86,7 @@
     }
 
     .btn:hover {
-        background-color: rgb(28, 28, 28) !important;
+        background-color: var(--bg-light-color) !important;
         background-image: none !important;
     }
     
@@ -86,7 +95,6 @@
     }
 
     .Header {
-/*        background-color: rgb(40, 40, 40) !important;*/
         background-color: var(--bg-dark-color) !important;
     }
 
@@ -104,7 +112,7 @@
     }
     
     .Box-header {
-        background-color: rgb(50, 50, 50) !important;
+        background-color: var(--bg-light-color) !important;
         border-color: var(--border-color) !important;
     }
     
@@ -114,7 +122,7 @@
 
     .dropdown-menu {
         background-color: transparent !important;
-        -webkit-backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(12px);
         border-color: var(--border-color) !important;
     }
     
@@ -131,11 +139,25 @@
     }
     
     .dropdown-divider {
-        border-color: rgba(73, 73, 73, .5) !important;
+        border-color: var(--inner-border-color) !important;
     }
 
     .user-profile-nav {
         background-color: var(--bg-color) !important;
+    }
+    
+    /* Search results in Header */
+    
+    .jump-to-suggestions-results-container .navigation-item {
+        border-color: var(--inner-border-color) !important;
+    }
+    
+    .jump-to-suggestions-results-container .navigation-item a {
+        color: var(--text-color) !important;
+    }
+    
+    .jump-to-suggestions-results-container .d-on-nav-focus {
+        background-color: var(--bg-light-color) !important;
     }
     
     /*  Overview Page  */
@@ -149,7 +171,7 @@
     }
     
     .profile-timeline-year-list .filter-item:hover {
-        background-color: rgba(234, 236, 239, 0.15) !important;
+        background-color: var(--bg-light-color) !important;
     }
     
     .pinned-item-meta {
@@ -163,12 +185,12 @@
     /*  Repositories Page  */
     
     .topic-tag {
-        background-color: rgba(65, 141, 209, 0.15) !important;
+        background-color: var(--topic-bg-color) !important;
         color: var(--link-color) !important;
     }
 
     .topic-tag:hover {
-        background-color: rgba(65, 141, 209, 0.25) !important;
+        background-color: var(--topic-bg-hover-color) !important;
     }
     
     .form-control, .form-select {
@@ -178,24 +200,23 @@
     
     /* this must after .form-control */
     .header-search-input, .header-search-wrapper {
-        background-color: rgb(50, 50, 50) !important;
+        background-color: var(--bg-light-color) !important;
     }
     
     /*  Repo Page  */
     
     .repohead {
         background-color: var(--bg-dark-color) !important;
-        border-bottom: 1px solid var(--border-color) !important;
+        border-color: var(--border-color) !important;
     }
     
     .repohead .btn {
-        border: 1px solid var(--border-color) !important;
+        border-color: var(--border-color) !important;
     }
     
     .repohead .social-count {
         background-color: var(--bg-color) !important;
-        border: 1px solid var(--border-color) !important;
-        border-left: none !important;
+        border-color: var(--border-color) !important;
     }
     
     .repohead .social-count a {
@@ -208,9 +229,10 @@
     
     .reponav-item.selected {
         background-color: var(--bg-color) !important;
-        border-color: #e36209 var(--border-color) transparent !important;
+        border-left-color: var(--border-color) !important;
+        border-right-color: var(--border-color) !important;
     }
-    
+
     .reponav-item {
         color: var(--text-color) !important;
     }
@@ -228,8 +250,8 @@
     }
     
     .ellipsis-expander {
-        background-color: rgb(73, 73, 73) !important;
-        color: rgba(255, 255, 255, .78) !important;
+        background-color: var(--border-color) !important;
+        color: var(--text-color) !important;
     }
     
     table.files {
@@ -237,7 +259,7 @@
     }
 
     table.files td {
-        border-top: 1px solid rgba(73, 73, 73, 0.5) !important;
+        border-color: var(--inner-border-color) !important;
     }
     
     table.files td.age {
@@ -271,7 +293,7 @@
     }
     
     .markdown-body .highlight pre, .markdown-body pre {
-        background-color: #2F3134 !important;
+        background-color: var(--bg-code-color) !important;
     }
     
     .markdown-body blockquote {
@@ -279,19 +301,19 @@
     }
     
     .pl-k {
-        color: rgb(204, 153, 204) !important; /* magenta */
+        color: var(--code-magenta) !important;
     }
     
     .pl-s, .pl-pds {
-        color: #3BB15A !important; /* green */
+        color: var(--code-green) !important;
     }
     
     .pl-en {
-        color: rgb(255, 204, 102) !important; /* yellow */
+        color: var(--code-yellow) !important;
     }
     
     .pl-c1 {
-        color: rgb(102,153,204) !important; /* blue */
+        color: var(--code-blue) !important;
     }
     
     .blob-code-inner .pl-v {
@@ -300,35 +322,19 @@
     }
     
     .markdown-body .pl-v {
-        color: #E7524B !important; /* red */
+        color: var(--code-red) !important;
     }
 
     .pl-smi, .pl-s1 {
         color: var(--text-color) !important;
     }
     
-    .pl-k {
-        color: rgb(204, 153, 204) !important; /* magenta */
-    }
-    
-    .pl-s, .pl-pds {
-        color: #3BB15A !important; /* green */
-    }
-    
     .pl-e {
         color: var(--text-color) !important;
     }
     
-    .pl-en {
-        color: rgb(255, 204, 102) !important; /* yellow */
-    }
-    
     .pl-ent {
-        color: #E7524B !important; /* red */
-    }
-    
-    .pl-c1 {
-        color: rgb(102,153,204) !important; /* blue */
+        color: var(--code-red) !important;
     }
 
     .pl-smi, .pl-s1 {
@@ -336,27 +342,27 @@
     }
     
     .blob-num {
-        background-color: #2F3134 !important;
+        background-color: var(--bg-code-color) !important;
         color: var(--muted-text-color) !important;
     }
     
     .blob-code-inner {
-        background-color: #2F3134 !important;
+        background-color: var(--bg-code-color) !important;
         color: var(--text-color) !important;
     }
     
     .flash-warn {
-        color: rgb(255, 204, 102) !important; /* yellow */
-        background-color: rgba(255, 204, 102, .15) !important;
+        color: var(--code-yellow) !important;
+        background-color: rgba(255, 204, 102, .15) !important; /* yellow */
     }
     
     .flash-warn .btn {
-        background-color: rgba(255, 204, 102, .25) !important;
-        border-color: rgba(255, 204, 102, .5) !important;
+        background-color: rgba(255, 204, 102, .25) !important; /* yellow */
+        border-color: rgba(255, 204, 102, .5) !important; /* yellow */
     }
     
     .select-menu-divider, .select-menu-header {
-        background-color: rgb(50, 50, 50) !important;
+        background-color: var(--bg-light-color) !important;
         border-color: var(--border-color) !important;
     }
     
@@ -371,11 +377,11 @@
     .select-menu-list .select-menu-item {
         background-color: var(--bg-color) !important;
         color: var(--muted-text-color) !important;
-        border-color: rgba(73, 73, 73, .5) !important;
+        border-color: var(--inner-border-color) !important;
     }
     
     .select-menu-item:hover {
-        background-color: #0366d6 !important;
+        background-color: var(--hover-color) !important;
         color: var(--text-color) !important;
     }
     
@@ -383,4 +389,3 @@
         color: var(--text-color) !important;
     }
 }
-
