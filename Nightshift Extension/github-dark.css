@@ -22,6 +22,7 @@
 @media (prefers-color-scheme: dark) {
     body {
         background-color: var(--bg-color) !important;
+        border-color: var(--border-color) !important;
         color: var(--text-color) !important;
     }
 
@@ -46,7 +47,7 @@
     }
     
     .text-gray {
-        color: var(--text-color) !important;
+        color: var(--muted-text-color) !important;
     }
     
     .text-gray-dark {
@@ -69,6 +70,14 @@
         color: var(--link-color) !important;
     }
 
+    .color-gray-9 {
+        color: var(--text-color) !important;
+    }
+    
+    .text-gray-light {
+        color: var(--muted-text-color) !important;
+    }
+    
     .muted-link {
         color: var(--muted-text-color) !important;
     }
@@ -144,6 +153,11 @@
 
     .user-profile-nav {
         background-color: var(--bg-color) !important;
+        border-color: var(--border-color) !important;
+    }
+    
+    .border-top, .border-bottom {
+        border-color: var(--border-color) !important;
     }
     
     /* Search results in Header */
@@ -162,6 +176,10 @@
     
     /*  Overview Page  */
     
+    .avatar-before-user-status {
+        border-color: var(--border-color) !important;
+    }
+    
     .user-profile-sticky-bar:after {
         background-color: transparent !important;
     }
@@ -174,6 +192,28 @@
         background-color: var(--bg-light-color) !important;
     }
     
+    .profile-timeline.discussion-timeline:before {
+        background-color: var(--border-color) !important;
+    }
+    
+    .profile-timeline.discussion-timeline .profile-timeline-month-heading:after {
+        background-color: var(--border-color) !important;
+    }
+
+    .profile-rollup-wrapper+.profile-rollup-wrapper {
+        border-color: var(--border-color) !important;
+    }
+    
+    .profile-rollup-summarized+.profile-rollup-summarized {
+        border-color: var(--inner-border-color) !important;
+    }
+    
+    .discussion-item-icon {
+        border-color: var(--border-color) !important;
+        background-color: var(--bg-light-color) !important;
+        color: var(--text-color) !important;
+    }
+
     .pinned-item-meta {
         color: var(--muted-text-color) !important;
     }
@@ -195,15 +235,24 @@
     
     .form-control, .form-select {
         background-color: var(--bg-dark-color) !important;
+        border-color: var(--border-color) !important;
         color: var(--text-color) !important;
     }
     
+    .Label--outline {
+        border-color: var(--border-color) !important;
+    }
+
     /* this must after .form-control */
     .header-search-input, .header-search-wrapper {
         background-color: var(--bg-light-color) !important;
     }
     
     /*  Repo Page  */
+    
+    .pagehead {
+        border-color: var(--border-color) !important;
+    }
     
     .repohead {
         background-color: var(--bg-dark-color) !important;
@@ -387,5 +436,27 @@
     
     .select-menu-item:hover .description {
         color: var(--text-color) !important;
+    }
+    
+    /* gists */
+    
+    .file {
+        border-color: var(--border-color) !important;
+    }
+    
+    .file-header {
+        background-color: var(--bg-light-color) !important;
+        border-color: var(--border-color) !important;
+    }
+    
+    .file-navigation-option .input-group .form-control {
+        border-color: var(--border-color) !important;
+    }
+    
+    /* Add new organization */
+    
+    .signup-plan-card {
+        background-color: var(--bg-dark-color) !important;
+        border-color: var(--border-color) !important;
     }
 }
