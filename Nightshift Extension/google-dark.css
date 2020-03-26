@@ -19,6 +19,10 @@
         color: var(--link-color) !important;
         border-color: var(--border-color) !important;
     }
+    
+    a:visited {
+        color: rgb(204, 153, 204) !important;
+    }
 
     h1, h2, h4 {
         color: var(--text-color) !important;
