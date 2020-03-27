@@ -4,6 +4,10 @@
   --bg-light-color: rgb(50, 50, 50);
   --text-color: rgba(255, 255, 255, 0.78);
   --muted-text-color: #72747c;
+  --text-green: rgb(110, 165, 100);
+  --text-blue: rgb(102,153,204);
+  --text-yellow: rgb(255, 204, 102);
+  --text-red: #E7524B;
   --link-color: rgb(102,153,204);
   --border-color: rgb(73, 73, 73);
   --inner-border-color: rgba(73, 73, 73, .5);
@@ -11,9 +15,10 @@
   --bg-code-light-color: rgb(57, 59, 62);
   --hover-code-color: rgb(85, 90, 100);
   --code-blue: rgb(102,153,204);
+  --code-purple: rgb(154, 157, 204);
   --code-magenta: rgb(204, 153, 204);
   --code-yellow: rgb(255, 204, 102);
-  --code-green: #3BB15A;
+  --code-green: rgb(110, 165, 100);
   --code-red: #E7524B;
   --topic-bg-color: rgba(65, 141, 209, 0.15);
   --topic-bg-hover: rgba(65, 141, 209, 0.25);
@@ -31,7 +36,11 @@
     a {
         color: var(--link-color) !important;
     }
-    
+
+    hr {
+        border-color: var(--border-color) !important;
+    }
+
     .border {
         border-color: var(--border-color) !important;
     }
@@ -84,6 +93,14 @@
         color: var(--muted-text-color) !important;
     }
     
+    .text-green {
+        color: var(--text-green) !important;
+    }
+
+    .text-red {
+        color: var(--text-red) !important;
+    }
+
     .muted-link {
         color: var(--muted-text-color) !important;
     }
@@ -117,6 +134,12 @@
         color: var(--text-color) !important;
     }
 
+    .btn-danger {
+        background: var(--bg-dark-color) !important;
+        border-color: var(--code-red) !important;
+        color: var(--code-red) !important;
+    }
+
     .Header {
         background-color: var(--bg-dark-color) !important;
     }
@@ -143,6 +166,14 @@
         border-color: var(--border-color) !important;
     }
 
+    .Box-row {
+        border-color: var(--inner-border-color) !important;
+    }
+    
+    .Box-row--focus-gray.navigation-focus {
+        background-color: var(--hover-color) !important;
+    }
+    
     .dropdown-menu {
         background-color: transparent !important;
         -webkit-backdrop-filter: blur(12px);
@@ -201,6 +232,50 @@
     .ajax-pagination-form .ajax-pagination-btn:focus,
     .ajax-pagination-form .ajax-pagination-btn:hover {
         background-color: var(--bg-light-color) !important;
+    }
+    
+    .subnav-item {
+        border-color: var(--border-color) !important;
+        color: var(--muted-text-color) !important;
+    }
+    
+    .subnav-item:focus, .subnav-item:hover {
+        background-color: var(--hover-color) !important;
+    }
+    
+    .table-list-header-toggle .btn-link {
+        color: var(--muted-text-color) !important;
+    }
+    
+    .table-list-header-toggle .btn-link:hover {
+        color: var(--text-color) !important;
+    }
+    
+    .table-list-header-toggle .btn-link.selected,
+    .table-list-header-toggle .btn-link.selected:hover {
+        color: var(--text-color) !important;
+    }
+
+    /* Flashes */
+    
+    .flash-notice {
+        background-color: rgba(102, 153, 204, .15) !important; /* blue */
+        color: var(--text-blue) !important;
+    }
+
+    .flash-warn .btn {
+        background-color: rgba(255, 204, 102, .25) !important; /* yellow */
+        border-color: rgba(255, 204, 102, .5) !important; /* yellow */
+    }
+    
+    .flash-warn {
+        background-color: rgba(255, 204, 102, .15) !important; /* yellow */
+        color: var(--text-yellow) !important;
+    }
+    
+    .flash-warn .btn {
+        background-color: rgba(255, 204, 102, .25) !important; /* yellow */
+        border-color: rgba(255, 204, 102, .5) !important; /* yellow */
     }
     
     /* Search results in Header */
@@ -414,6 +489,16 @@
         color: var(--text-color) !important;
     }
     
+    .SelectMenu-divider {
+        background-color: var(--bg-light-color) !important;
+        border-color: var(--border-color) !important;
+        color: var(--muted-text-color) !important;
+    }
+    
+    .ws-normal {
+        background-color: var(--bg-color) !important;
+    }
+
     .SelectMenu-footer {
         border-color: var(--border-color) !important;
         color: var(--muted-text-color) !important;
@@ -477,8 +562,12 @@
         color: var(--code-yellow) !important;
     }
     
+    .pl-c {
+        color: var(--muted-text-color) !important;
+    }
+    
     .pl-c1 {
-        color: var(--code-blue) !important;
+        color: var(--code-purple) !important;
     }
     
     .blob-code-inner .pl-v {
@@ -495,7 +584,7 @@
     }
     
     .pl-e {
-        color: var(--text-color) !important;
+        color: var(--code-yellow) !important;
     }
     
     .pl-ent {
@@ -534,16 +623,6 @@
         background-color: var(--bg-code-light-color) !important;
     }
     
-    .flash-warn {
-        color: var(--code-yellow) !important;
-        background-color: rgba(255, 204, 102, .15) !important; /* yellow */
-    }
-    
-    .flash-warn .btn {
-        background-color: rgba(255, 204, 102, .25) !important; /* yellow */
-        border-color: rgba(255, 204, 102, .5) !important; /* yellow */
-    }
-    
     .select-menu-divider, .select-menu-header {
         background-color: var(--bg-light-color) !important;
         border-color: var(--border-color) !important;
@@ -575,9 +654,10 @@
     /* gists */
     
     .file {
+        background-color: var(--bg-code-color) !important;
         border-color: var(--border-color) !important;
     }
-    
+
     .file-header {
         background-color: var(--bg-light-color) !important;
         border-color: var(--border-color) !important;
@@ -587,6 +667,95 @@
         border-color: var(--border-color) !important;
     }
     
+    .gisthead .pagehead-actions .octicon-mute {
+        color: var(--muted-text-color) !important;
+    }
+    
+    /* Code Mirror */
+    
+    .CodeMirror-scroll {
+        background-color: var(--bg-code-color) !important;
+    }
+    
+    .cm-s-github-light.CodeMirror {
+        background-color: var(--bg-code-color);
+    }
+
+    .cm-s-github-light .CodeMirror-lines {
+        background-color: var(--bg-code-color) !important;
+        color: var(--text-color) !important;
+    }
+    
+    .cm-s-github-light .CodeMirror-gutters {
+        background-color: var(--bg-code-color) !important;
+    }
+    
+    .cm-s-github-light .CodeMirror-linenumber {
+        color: var(--muted-text-color) !important;
+    }
+    
+    .cm-s-github-light .cm-keyword {
+        color: var(--code-magenta) !important;
+    }
+    
+    .cm-s-github-light .cm-def {
+        color: var(--code-yellow) !important;
+        font-weight: 600 !important;
+    }
+    
+    .cm-s-github-light .cm-string {
+        color: var(--code-green) !important;
+    }
+    
+    .cm-s-github-light .cm-comment {
+        color: var(--muted-text-color) !important;
+    }
+    
+    .cm-s-github-light .cm-variable {
+        color: var(--text-color) !important;
+    }
+    
+    .cm-s-github-light .cm-variable-2 {
+        color: var(--code-blue) !important;
+    }
+    
+    .cm-s-github-light .cm-builtin {
+        color: var(--code-purple) !important;
+    }
+
+    /* Commits history */
+    
+    .commits-listing:before {
+        background-color: var(--border-color) !important;
+    }
+    
+    .commit-group-title .octicon-git-commit {
+        background-color: var(--bg-color) !important;
+        color: var(--border-color) !important
+    }
+    
+    .commit .commit-title,
+    .commit .commit-title a {
+        color: var(--text-color) !important;
+    }
+    
+    .commit-group-title {
+        color: var(--muted-text-color) !important;
+    }
+    
+    .commit-desc pre {
+        color: var(--muted-text-color) !important;
+    }
+
+    .signed-commit-badge {
+        border-color: var(--border-color) !important;
+        color: var(--text-green) !important;
+    }
+    
+    .signed-commit-badge.verified:hover {
+        border-color: var(--text-green) !important;
+    }
+
     /* Add new organization */
     
     .signup-plan-card {
