@@ -415,7 +415,11 @@
     .pagehead-actions a {
         color: var(--text-color) !important;
     }
-    
+
+    .pagehead-actions > li {
+        color: var(--text-color) !important;
+    }
+
     .reponav-item.selected {
         background-color: var(--bg-color) !important;
         border-left-color: var(--border-color) !important;
@@ -640,34 +644,6 @@
         background-color: var(--bg-code-light-color) !important;
     }
     
-    .select-menu-divider, .select-menu-header {
-        background-color: var(--bg-light-color) !important;
-        border-color: var(--border-color) !important;
-    }
-    
-    .select-menu-header .select-menu-title {
-        color: var(--text-color) !important;
-    }
-    
-    .select-menu-list {
-        background-color: var(--bg-color) !important;
-    }
-    
-    .select-menu-list .select-menu-item {
-        background-color: var(--bg-color) !important;
-        color: var(--muted-text-color) !important;
-        border-color: var(--inner-border-color) !important;
-    }
-    
-    .select-menu-item:hover {
-        background-color: var(--hover-color) !important;
-        color: var(--text-color) !important;
-    }
-    
-    .select-menu-item:hover .description {
-        color: var(--text-color) !important;
-    }
-    
     /* gists */
     
     .file {
@@ -793,6 +769,10 @@
 
     /* Issue */
     
+    .IssueLabel {
+        color: var(--text-color) !important;
+    }
+    
     .gh-header {
         background-color: var(--bg-color) !important;
     }
@@ -895,26 +875,35 @@
         border-color: var(--bg-color) !important;
     }
     
-    .timeline-new-comment .previewable-comment-form .comment-body {
+    .previewable-comment-form .comment-body {
+        border-color: var(--inner-border-color) !important;
+    }
+    
+    .comment-reactions.has-reactions {
         border-color: var(--inner-border-color) !important;
     }
     
     .drag-and-drop {
         background-color: var(--bg-color) !important;
         border-color: var(--border-color) !important;
-        color: var--muted-text-color) !important;
+        color: var(--muted-text-color) !important;
     }
     
-    .page-responsive .previewable-comment-form .comment-form-head.tabnav {
+    .page-responsive .previewable-comment-form .comment-form-head.tabnav,
+    .previewable-comment-form .comment-form-head.tabnav {
         background: var(--bg-light-color) !important;
     }
-    
+
     .tabnav-tab.selected,
     .tabnav-tab[aria-current],
     .tabnav-tab[aria-selected=true] {
         background-color: var(--bg-color) !important;
         border-color: var(--border-color) !important;
         color: var(--text-color) !important;
+    }
+    
+    .tabnav {
+        border-color: var(--border-color) !important;
     }
     
     .tabnav-tab {
@@ -931,9 +920,49 @@
         color: var(--link-gray) !important;
     }
     
+    .toolbar-item:hover,
+    .toolbar-item .menu-target:hover {
+        color: var(--link-color) !important;
+    }
+    
     .select-menu-modal {
+        background-color: transparent !important;
         border-color: var(--border-color) !important;
         color: var(--muted-text-color) !important;
+    }
+    
+    .select-menu-divider, .select-menu-header {
+        background-color: var(--bg-light-color) !important;
+        border-color: var(--border-color) !important;
+    }
+    
+    .select-menu-header .select-menu-title {
+        color: var(--text-color) !important;
+    }
+    
+    .select-menu-list {
+        background-color: var(--bg-color) !important;
+    }
+    
+    .select-menu-item {
+        background-color: var(--bg-color) !important;
+        color: var(--muted-text-color) !important;
+        border-color: var(--inner-border-color) !important;
+    }
+
+    .select-menu-item:hover {
+        background-color: var(--hover-color) !important;
+        color: var(--text-color) !important;
+    }
+    
+    .select-menu-item:hover .description {
+        color: var(--text-color) !important;
+    }
+    
+    .select-menu-item.selected,
+    details-menu .select-menu-item[aria-checked=true],
+    details-menu .select-menu-item[aria-selected=true] {
+        color: var(--text-color) !important;
     }
 
     .select-menu-filters {
