@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7441F7562431385E0037F2B4 /* stackoverflow-dark.css in Resources */ = {isa = PBXBuildFile; fileRef = 7441F7552431385E0037F2B4 /* stackoverflow-dark.css */; };
 		747570B924293E0500A9A28F /* github-dark.css in Resources */ = {isa = PBXBuildFile; fileRef = 747570B824293E0500A9A28F /* github-dark.css */; };
 		747570BB242944A300A9A28F /* google-dark.css in Resources */ = {isa = PBXBuildFile; fileRef = 747570BA242944A300A9A28F /* google-dark.css */; };
 		74F0A3352428AA6E00D78800 /* Nightshift.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 74F0A3342428AA6E00D78800 /* Nightshift.entitlements */; };
@@ -48,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7441F7552431385E0037F2B4 /* stackoverflow-dark.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "stackoverflow-dark.css"; sourceTree = "<group>"; };
 		747570B824293E0500A9A28F /* github-dark.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "github-dark.css"; sourceTree = "<group>"; };
 		747570BA242944A300A9A28F /* google-dark.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "google-dark.css"; sourceTree = "<group>"; };
 		74F0A3312428AA6E00D78800 /* Nightshift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nightshift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 				74F0A3582428AA7200D78800 /* Nightshift_Extension.entitlements */,
 				747570B824293E0500A9A28F /* github-dark.css */,
 				747570BA242944A300A9A28F /* google-dark.css */,
+				7441F7552431385E0037F2B4 /* stackoverflow-dark.css */,
 			);
 			path = "Nightshift Extension";
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			files = (
 				74F0A3572428AA7200D78800 /* ToolbarItemIcon.pdf in Resources */,
 				747570B924293E0500A9A28F /* github-dark.css in Resources */,
+				7441F7562431385E0037F2B4 /* stackoverflow-dark.css in Resources */,
 				74F0A3522428AA7200D78800 /* SafariExtensionViewController.xib in Resources */,
 				74F0A3552428AA7200D78800 /* script.js in Resources */,
 				747570BB242944A300A9A28F /* google-dark.css in Resources */,

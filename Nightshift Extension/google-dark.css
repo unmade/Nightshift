@@ -6,6 +6,7 @@
   --text-color: rgba(255, 255, 255, 0.78);
   --muted-text-color: rgb(128, 128, 128);
   --link-color: rgb(138, 181,248);
+  --link-visited: rgb(204, 153, 204);
   --link-gray: rgb(150, 150, 150);
   --border-color: rgb(73, 73, 73);
   --inner-border-color: rgba(73, 73, 73, .5);
@@ -28,7 +29,7 @@
     }
     
     a:visited {
-        color: rgb(204, 153, 204) !important;
+        color: var(--link-visited) !important;
     }
 
     h1, h2, h4 {
