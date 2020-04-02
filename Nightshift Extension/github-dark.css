@@ -14,6 +14,12 @@
   --inner-border-color: rgba(73, 73, 73, .5);
   --bg-code-color: rgb(47, 49, 52);
   --bg-code-light-color: rgb(57, 59, 62);
+  --bg-code-addition-dark: rgb(35, 65, 45);
+  --bg-code-addition: rgb(50, 80, 60);
+  --bg-code-addition-light: rgb(100, 150, 110);
+  --bg-code-deletion-dark: rgb(78, 38, 43);
+  --bg-code-deletion: rgb(90, 50, 55);
+  --bg-code-deletion-light: rgb(150, 95, 95);
   --hover-code-color: rgb(85, 90, 100);
   --code-blue: rgb(102,153,204);
   --code-purple: rgb(154, 157, 204);
@@ -24,6 +30,7 @@
   --topic-bg-color: rgba(65, 141, 209, 0.15);
   --topic-bg-hover: rgba(65, 141, 209, 0.25);
   --hover-color: rgb(50, 52, 55);
+  --button-selected: rgb(15, 15, 15);
 }
 
 
@@ -151,6 +158,13 @@
         background: var(--bg-dark-color) !important;
         border-color: var(--code-red) !important;
         color: var(--code-red) !important;
+    }
+    
+    .btn.selected,
+    .btn:active,
+    .btn[aria-selected=true],
+    [open]>.btn {
+        background-color: var(--button-selected) !important;
     }
 
     .Header {
@@ -361,6 +375,30 @@
     rect.day[data-count="0"] {
         fill: var(--muted-text-color) !important;
     }
+
+    .Popover-message--top-left:before,
+    .Popover-message--top-right:before,
+    .Popover-message--top:before {
+        border-bottom-color: var(--border-color) !important;
+    }
+    
+    .Popover-message--top-left:after,
+    .Popover-message--top-right:after,
+    .Popover-message--top:after {
+        border-bottom-color: var(--bg-color) !important;
+    }
+    
+    .Popover-message--bottom-left:before,
+    .Popover-message--bottom-right:before,
+    .Popover-message--bottom:before {
+        border-top-color: var(--border-color) !important;
+    }
+    
+    .Popover-message--bottom-left:after,
+    .Popover-message--bottom-right:after,
+    .Popover-message--bottom:after {
+        border-top-color: var(--bg-color) !important;
+    }
     
     /*  Repositories Page  */
     
@@ -370,7 +408,7 @@
     }
 
     .topic-tag:hover {
-        background-color: var(--topic-bg-hover-color) !important;
+        background-color: var(--topic-bg-hover) !important;
     }
     
     .form-control, .form-select {
@@ -630,8 +668,11 @@
         color: var(--text-color) !important;
     }
 
-    .blob-code-inner {
+    .blob-code {
         background-color: var(--bg-code-color) !important;
+    }
+    
+    .blob-code-inner {
         color: var(--text-color) !important;
     }
 
@@ -816,7 +857,7 @@
     }
     
     .timeline-comment--caret:after {
-        border-right-color: var(--border-color) !important;
+        border-right-color: var(--bg-light-color) !important;
     }
     
     .timeline-comment.current-user .timeline-comment-label {
@@ -848,6 +889,10 @@
     
     .TimelineItem-badge.bg-red {
         background-color: var(--text-red) !important;
+    }
+    
+    .TimelineItem--condensed .TimelineItem-badge {
+        background-color: var(--bg-color) !important;
     }
     
     .discussion-sidebar-toggle:hover {
@@ -1015,10 +1060,135 @@
         border-color: var(--inner-border-color) !important;
     }
 
-    /* Add new organization */
+    /* Pull Requests */
+
+    .commit-ref {
+        background-color: var(--topic-bg-color) !important;
+        color: var(--link-color) !important;
+    }
+
+    .merge-pr-more-commits,
+    .status-meta {
+        color: var(--muted-text-color) !important;
+    }
     
+    .branch-action-body,
+    .branch-action-body .merge-message {
+        background-color: var(--bg-light-color) !important;
+    }
+    
+    .branch-action-body:after {
+        border-right-color: var(--bg-light-color) !important;
+    }
+
+    .branch-action-body .merge-branch-form,
+    .branch-action-body .merge-message {
+        border-top-color: var(--inner-border-color) !important;
+    }
+    
+    .branch-action-item+.branch-action-item,
+    .branch-action-item+.mergeability-details {
+        border-top-color: var(--border-color) !important;
+    }
+    
+    .merge-status-list {
+        border-color: var(--border-color) !important;
+    }
+    
+    .merge-status-item {
+        background-color: var(--bg-color) !important;
+        border-bottom-color: var(--inner-border-color) !important;
+    }
+    
+    .branch-action-state-closed-dirty .branch-action-body,
+    .branch-action-state-dirty .branch-action-body,
+    .is-rebasing .branch-action-state-dirty-if-rebasing .branch-action-body {
+        border-color: var(--border-color) !important;
+    }
+    
+    .branch-action-state-closed-dirty .branch-action-body:before,
+    .branch-action-state-dirty .branch-action-body:before,
+    .is-rebasing .branch-action-state-dirty-if-rebasing .branch-action-body:before {
+        border-right-color: var(--border-color) !important;
+    }
+    
+    .branch-action-state-closed-dirty .branch-action-icon,
+    .branch-action-state-dirty .branch-action-icon,
+    .is-rebasing .branch-action-state-dirty-if-rebasing .branch-action-icon {
+        background-color: var(--bg-light-color) !important;
+    }
+    
+    .table-list-bordered {
+        border-bottom-color: var(--border-color) !important;
+    }
+    
+    .table-list-cell {
+        border-top-color: var(--border-color) !important;
+    }
+    
+    .table-list-bordered .table-list-cell:first-child {
+        border-left-color: var(--border-color) !important;
+    }
+    
+    .table-list-bordered .table-list-cell:last-child {
+        border-right-color: var(--border-color) !important;
+    }
+    
+    .commits-list-item .commit-meta {
+        color: var(--muted-text-color) !important;
+    }
+    
+    .commits-list-item.navigation-focus,
+    .commits-list-item[aria-selected=true] {
+        background: var(--hover-color) !important;
+    }
+    
+    .CheckRun-header {
+        border-top-color: var(--border-color) !important;
+        border-bottom-color: var(--inner-border-color) !important;
+    }
+    
+    .diffbar {
+        background-color: var(--bg-color) !important;
+    }
+    
+    .pr-toolbar.is-stuck {
+        background-color: var(--bg-color) !important;
+    }
+    
+    .blob-num-addition {
+        background-color: var(--bg-code-addition-dark) !important;
+    }
+    
+    .blob-code-addition {
+        background-color: var(--bg-code-addition) !important;
+    }
+
+    .blob-code-addition .x {
+        background-color: var(--bg-code-addition-light) !important;
+    }
+
+    .blob-num-deletion {
+        background-color: var(--bg-code-deletion-dark) !important;
+    }
+    
+    .blob-code-deletion {
+        background-color: var(--bg-code-deletion) !important;
+    }
+    
+    .blob-code-deletion .x {
+        background-color: var(--bg-code-deletion-light) !important;
+    }
+    
+    .file-diff-split .blob-code+.blob-num {
+        border-left-color: var(--border-color) !important;
+    }
+
+    /* Add new organization */
+
     .signup-plan-card {
         background-color: var(--bg-dark-color) !important;
         border-color: var(--border-color) !important;
     }
+    
 }
