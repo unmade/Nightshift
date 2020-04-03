@@ -233,6 +233,90 @@
         color: var(--muted-text-color) !important;
     }
     
+    .Eegi6c {
+        color: var(--text-color) !important;
+    }
+    
+    .kp-blk .xpdclose .farUxc,
+    .kp-blk .xpdopen .mJ2Mod {
+        border-top-color: var(--border-color) !important;
+    }
+    
+    .scrt tr:first-child td {
+        border-top-color: var(--inner-border-color) !important;
+    }
+    
+    .scrt td {
+        border-bottom-color: var(--inner-border-color) !important;
+    }
+    
+    .xpdclose .a84NUc:not(:empty),
+    .xpdopen .CQKTwc:not(:empty) {
+        border-top-color: var(--border-color) !important;
+    }
+    
+    .yMspv {
+        background-color: var(--bg-dark-color) !important;
+    }
+    
+    .iT3aZd+div {
+        border-top-color: var(--inner-border-color) !important;
+    }
+    
+    .iq-bubble {
+        background: var(--bg-color) !important;
+        border-color: var(--border-color) !important;
+        color: var(--muted-text-color) !important;
+    }
+    
+    .iq-bubble:hover {
+        background: var(--bg-light-color) !important;
+        color: var(--text-color) !important;
+    }
+    
+    .jPHPSe,
+    .ersBRc {
+        color: var(--link-color) !important;
+    }
+    
+    .bv9RPe,
+    .SSYIcf  {
+        color: var(--muted-text-color) !important;
+    }
+    
+    .eojFMe {
+        background-color: var(--bg-color) !important;
+    }
+    
+    .z1asCe svg {
+        fill: var(--text-color) !important;
+    }
+    
+    .DEJ8le {
+        border-color: var(--border-color) !important;
+    }
+    
+    .StR8Re {
+        border-color: var(--border-color) !important;
+    }
+    
+    .aR1mEe {
+        border-bottom-color: var(--border-color) !important;
+    }
+    
+    g-fab {
+        background-color: var(--bg-light-color) !important;
+        border-color: var(--border-color) !important;
+    }
+    
+    .mdFQt.WH6xid.Dgj8Pb {
+        background-color: var(--bg-dark-color) !important;
+    }
+    
+    .V7X3Je {
+        color: var(--text-color) !important;
+    }
+    
     /* Profile in the top right corner */
     
     .gb_F {
@@ -375,6 +459,10 @@
     
     .W8wzH {
         color: var(--link-gray) !important;
+    }
+    
+    .cEPPT {
+        border-color: var(--border-color) !important;
     }
     
     /* Image Preview */

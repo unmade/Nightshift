@@ -411,6 +411,15 @@
         background-color: var(--topic-bg-hover) !important;
     }
     
+    .topic-tag-action {
+        background-color: var(--topic-bg-color) !important;
+    }
+    
+    .delete-topic-button, .delete-topic-link {
+        background-color: var(--topic-bg-color) !important;
+        border-color: var(--inner-border-color) !important;
+    }
+    
     .form-control, .form-select {
         background-color: var(--bg-dark-color) !important;
         border-color: var(--border-color) !important;
@@ -585,6 +594,18 @@
     
     table.files tr.navigation-focus td, table.files tr[aria-selected=true] td {
         background-color: var(--bg-color) !important;
+    }
+    
+    .commit-tease {
+        color: var(--muted-text-color) !important;
+    }
+    
+    .commit-tease a.text-inherit {
+        color: var(--link-gray) !important;
+    }
+    
+    .commit-tease a.text-inherit:hover {
+        color: var(--link-color) !important;
     }
     
     /*  Code hightlighting  */
@@ -1118,6 +1139,14 @@
         background-color: var(--bg-light-color) !important;
     }
     
+    .merge-branch-heading {
+        color: var(--text-color) !important;
+    }
+    
+    .merge-branch-description {
+        color: var(--muted-text-color) !important;
+    }
+
     .table-list-bordered {
         border-bottom-color: var(--border-color) !important;
     }
@@ -1155,7 +1184,7 @@
     .pr-toolbar.is-stuck {
         background-color: var(--bg-color) !important;
     }
-    
+
     .blob-num-addition {
         background-color: var(--bg-code-addition-dark) !important;
     }
