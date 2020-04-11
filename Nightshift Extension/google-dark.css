@@ -16,7 +16,7 @@
     html {
         background-color: var(--bg-dark-color) !important;
     }
-    
+
     body {
         background-color: var(--bg-color) !important;
         border-color: var(--border-color) !important;
@@ -76,6 +76,10 @@
     #fbar {
         background-color: var(--bg-dark-color) !important;
         border-color: var(--border-color) !important;
+    }
+    
+    .gb_tc {
+        filter: invert(1);
     }
 
     /* Search Results */
@@ -334,6 +338,7 @@
     }
     
     .qmv19b {
+        background-color: var(--bg-dark-color) !important;
         border-color: var(--border-color) !important;
     }
     
@@ -350,6 +355,14 @@
         border-color: var(--border-color) !important;
     }
     
+    .yyjhs {
+        background-color: var(--bg-light-color) !important;
+    }
+    
+    .cXedhc span {
+        color: var(--muted-text-color) !important;
+    }
+    
     .vk_c, .vk_cxp, #rhs .fIcnad {
         border-color: var(--border-color) !important;
     }
@@ -358,8 +371,12 @@
         background-color: var(--bg-hover-color) !important;
     }
     
-    .dbg0pd {
+    .dbg0pd span {
         color: var(--text-color) !important;
+    }
+    
+    .DLOTif {
+        color: var(--link-color) !important;
     }
     
     .wYWDAd {
@@ -405,6 +422,26 @@
     
     .tGgE5d {
         border-top-color: var(--border-color) !important;
+    }
+    
+    .H73aad {
+        background: var(--bg-color) !important;
+    }
+    
+    .jleFbf {
+        color: var(--text-color) !important;
+    }
+    
+    .zf84ud {
+        background-color: var(--bg-color) !important;
+    }
+    
+    .xERobd g-img {
+        filter: hue-rotate(180deg) !important;
+    }
+    
+    #dimg_104 {
+        filter: invert(1);
     }
     
     /* Profile in the top right corner */
