@@ -1,0 +1,10 @@
+@media (prefers-color-scheme: dark) {
+    html {
+        filter: invert(0.85) hue-rotate(165deg);
+    }
+
+    img,
+    video {
+        filter: invert(1) hue-rotate(-165deg) !important;
+    }
+}
