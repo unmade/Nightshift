@@ -29,10 +29,10 @@
 			<dict>
 				<key>Excluded URL Patterns</key>
 				<array>
-					<string>https://*.google.com/*</string>
 					<string>https://*.github.com/*</string>
 					<string>https://*.stackoverflow.com/*</string>
 					<string>https://*.reddit.com/*</string>
+					<string>https://*.letterboxd.com/*</string>
 				</array>
 				<key>Style Sheet</key>
 				<string>dark.css</string>
@@ -50,12 +50,14 @@
 				</array>
 			</dict>
 			<dict>
-				<key>Style Sheet</key>
-				<string>google-dark.css</string>
 				<key>Allowed URL Patterns</key>
 				<array>
 					<string>https://*.google.com/*</string>
 				</array>
+				<key>Excluded URL Patterns</key>
+				<array/>
+				<key>Style Sheet</key>
+				<string>google-dark.css</string>
 			</dict>
 			<dict>
 				<key>Style Sheet</key>
