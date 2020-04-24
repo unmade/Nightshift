@@ -5,6 +5,6 @@
 
     img,
     video {
-        filter: invert(1) hue-rotate(-165deg) !important;
+        filter: invert(1.0) hue-rotate(-165deg) !important;
     }
 }

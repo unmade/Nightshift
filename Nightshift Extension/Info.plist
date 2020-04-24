@@ -27,21 +27,6 @@
 		<key>SFSafariStyleSheet</key>
 		<array>
 			<dict>
-				<key>Excluded URL Patterns</key>
-				<array>
-					<string>https://*.github.com/*</string>
-					<string>https://*.stackoverflow.com/*</string>
-					<string>https://*.reddit.com/*</string>
-					<string>https://*.letterboxd.com/*</string>
-				</array>
-				<key>Style Sheet</key>
-				<string>dark.css</string>
-				<key>Allowed URL Patterns</key>
-				<array>
-					<string>*</string>
-				</array>
-			</dict>
-			<dict>
 				<key>Style Sheet</key>
 				<string>stackoverflow-dark.css</string>
 				<key>Allowed URL Patterns</key>
@@ -82,7 +67,7 @@
 		<key>SFSafariToolbarItem</key>
 		<dict>
 			<key>Action</key>
-			<string>Command</string>
+			<string>Popover</string>
 			<key>Identifier</key>
 			<string>Button</string>
 			<key>Image</key>
@@ -94,7 +79,8 @@
 		<dict>
 			<key>Allowed Domains</key>
 			<array>
-				<string>*.webkit.org</string>
+				<string>https://*/*</string>
+				<string>http://*/*</string>
 			</array>
 			<key>Level</key>
 			<string>All</string>

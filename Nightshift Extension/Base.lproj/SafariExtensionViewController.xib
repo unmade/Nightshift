@@ -1,11 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="SafariExtensionViewController" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="SafariExtensionViewController" customModule="Nightshift_Extension" customModuleProvider="target">
             <connections>
+                <outlet property="showDefaults" destination="wJp-I8-cKs" id="uTB-Xu-qLi"/>
+                <outlet property="titleLabel" destination="4Iy-aV-wGF" id="EcM-s5-CpA"/>
+                <outlet property="toggleButton" destination="wJp-I8-cKs" id="Qc5-OP-Rb7"/>
                 <outlet property="view" destination="c22-O7-iKe" id="vwT-Xx-Aiz"/>
             </connections>
         </customObject>
@@ -15,16 +19,34 @@
             <rect key="frame" x="0.0" y="0.0" width="330" height="119"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Iy-aV-wGF">
-                    <rect key="frame" x="103" y="82" width="124" height="17"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Nightshift Extension" id="2Ec-kd-q2K">
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wJp-I8-cKs">
+                    <rect key="frame" x="100" y="13" width="129" height="32"/>
+                    <buttonCell key="cell" type="push" title="Dark Mode Off" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1yz-Ii-Oku">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onClick:" target="-2" id="yHw-MI-GVT"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Iy-aV-wGF">
+                    <rect key="frame" x="100" y="83" width="130" height="16"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Nightshift Extension" id="2Ec-kd-q2K">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
             </subviews>
+            <constraints>
+                <constraint firstItem="4Iy-aV-wGF" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" id="3ry-eW-PjI"/>
+                <constraint firstAttribute="bottom" secondItem="wJp-I8-cKs" secondAttribute="bottom" constant="20" id="LGd-Ou-aEd"/>
+                <constraint firstItem="4Iy-aV-wGF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c22-O7-iKe" secondAttribute="leading" constant="102" id="OUH-fG-hcI"/>
+                <constraint firstItem="wJp-I8-cKs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c22-O7-iKe" secondAttribute="leading" constant="106" id="PCA-fK-uGg"/>
+                <constraint firstAttribute="trailing" secondItem="wJp-I8-cKs" secondAttribute="trailing" constant="107" id="Z7O-nw-nOh"/>
+                <constraint firstAttribute="trailing" secondItem="4Iy-aV-wGF" secondAttribute="trailing" constant="102" id="gpD-r1-fBk"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="154.5"/>
         </customView>
     </objects>
 </document>

@@ -17,12 +17,11 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         self.appNameLabel.stringValue = "Nightshift";
     }
-    
+
     @IBAction func openSafariExtensionPreferences(_ sender: AnyObject?) {
         SFSafariApplication.showPreferencesForExtension(withIdentifier: "com.fdooch.Nightshift-Extension") { error in
             if let _ = error {
                 // Insert code to inform the user that something went wrong.
-
             }
         }
     }
