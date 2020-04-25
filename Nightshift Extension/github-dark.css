@@ -1,25 +1,27 @@
-.Header {
-    background-color: rgb(185, 189, 192) !important;
-    color: #24292e !important;
-}
+@media (prefers-color-scheme: dark) {
+    .Header {
+        background-color: rgb(185, 189, 192) !important;
+        color: #24292e !important;
+    }
 
-.Header-link {
-    color: #24292e !important;
-}
+    .Header-link {
+        color: #24292e !important;
+    }
 
-/*  This is the only way I could change placeholder color  */
-.header-search-input {
-    filter: invert(1.0) !important;
-}
+    /*  This is the only way I could change placeholder color  */
+    .header-search-input {
+        filter: invert(1.0) !important;
+    }
 
-.header-search-input:focus {
-    filter: none !important;
-}
+    .header-search-input:focus {
+        filter: none !important;
+    }
 
-.avatar-before-user-status {
-    border-color: #171b1d !important;
-}
+    .avatar-before-user-status {
+        border-color: #171b1d !important;
+    }
 
-.markdown-body img {
-    background-color: transparent !important;
+    .markdown-body img {
+        background-color: transparent !important;
+    }
 }
