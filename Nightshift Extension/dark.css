@@ -1,8 +1,14 @@
 @media (prefers-color-scheme: dark) {
-    html {
+/*    html {*/
+/*/*        background-color: rgb(38, 38, 38) !important;*/
+/*        filter: invert(0.85) hue-rotate(165deg);*/
+/*    }*/
+
+    body {
+        background-color: rgb(38, 38, 38);
         filter: invert(0.85) hue-rotate(165deg);
     }
-
+    
     img,
     video {
         filter: invert(1.0) hue-rotate(-165deg) !important;

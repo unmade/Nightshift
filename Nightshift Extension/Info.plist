@@ -34,24 +34,6 @@
 					<string>https://*.stackoverflow.com/*</string>
 				</array>
 			</dict>
-			<dict>
-				<key>Allowed URL Patterns</key>
-				<array>
-					<string>https://*.google.com/*</string>
-				</array>
-				<key>Excluded URL Patterns</key>
-				<array/>
-				<key>Style Sheet</key>
-				<string>google-dark.css</string>
-			</dict>
-			<dict>
-				<key>Style Sheet</key>
-				<string>github-dark.css</string>
-				<key>Allowed URL Patterns</key>
-				<array>
-					<string>https://*.github.com/*</string>
-				</array>
-			</dict>
 		</array>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.Safari.extension</string>
@@ -87,8 +69,8 @@
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2020 Леша Маслаков. All rights reserved.</string>
+	<string>Copyright © 2020 Aleksei Maslakov. All rights reserved.</string>
 	<key>NSHumanReadableDescription</key>
-	<string>This is a Safari Extension. You should tell us what your extension does here.</string>
+	<string>Nighshift enables dark mode for websites</string>
 </dict>
 </plist>

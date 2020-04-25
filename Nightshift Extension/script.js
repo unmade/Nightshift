@@ -1,5 +1,14 @@
+// Normally this would be inside "DOMContenLoaded" event listener
+// however, this works slightly faster and helps avoid white screen
 safari.extension.dispatchMessage("nightshift", {"host": window.location.host});
 safari.self.addEventListener("message", handleMessage);
+
+
+const STYLES = {
+    "": "dark.css",
+    "github.com": "github-dark.css",
+    "google.com": "google-dark.css",
+}
 
 
 function handleMessage(event) {
@@ -19,18 +28,33 @@ function handleMessage(event) {
 
 
 function setDarkMode(mode) {
-    const href = safari.extension.baseURI + "dark.css";
+    let styles = [
+        ...Object.entries(STYLES)
+            .filter(([domain, href]) => window.location.host.endsWith(domain))
+            .map(([domain, href]) => safari.extension.baseURI + href),
+    ];
 
     if (mode === true) {
-        var link = document.createElement("link");
-        link.href = href
-        link.type = "text/css";
-        link.rel = "stylesheet";
-        document.getElementsByTagName("head")[0].appendChild(link);
+        document.getElementsByTagName("html")[0].style.backgroundColor = "initial";
+        styles.map(style => addStylesheet(style));
     } else {
-        var elements = document.querySelectorAll(`link[rel=stylesheet][href~="${href}"]`);
-        elements.forEach((e, i) => {
-            e.parentNode.removeChild(e);
-        });
+        styles.map(style => removeStylesheet(style));
     }
+}
+
+
+function addStylesheet(href) {
+    let link = document.createElement("link");
+    link.href = href
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    document.getElementsByTagName("head")[0].appendChild(link);
+}
+
+
+function removeStylesheet(href) {
+    let elements = document.querySelectorAll(`link[rel=stylesheet][href~="${href}"]`);
+    elements.forEach((e, i) => {
+        e.parentNode.removeChild(e);
+    });
 }

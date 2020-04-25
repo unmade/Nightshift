@@ -1,5 +1,4 @@
 @media (prefers-color-scheme: dark) {
-    
     .clc-cp-sb--short .-wrapper {
        background-color: var(--black-025) !important;
        border-color: var(--black-100) !important;

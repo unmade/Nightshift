@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wJp-I8-cKs">
-                    <rect key="frame" x="100" y="13" width="129" height="32"/>
+                    <rect key="frame" x="101" y="13" width="129" height="32"/>
                     <buttonCell key="cell" type="push" title="Dark Mode Off" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1yz-Ii-Oku">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -31,7 +31,7 @@
                 </button>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Iy-aV-wGF">
                     <rect key="frame" x="100" y="83" width="130" height="16"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Nightshift Extension" id="2Ec-kd-q2K">
+                    <textFieldCell key="cell" lineBreakMode="charWrapping" truncatesLastVisibleLine="YES" sendsActionOnEndEditing="YES" alignment="center" title="Nightshift Extension" id="2Ec-kd-q2K">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -40,11 +40,9 @@
             </subviews>
             <constraints>
                 <constraint firstItem="4Iy-aV-wGF" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" id="3ry-eW-PjI"/>
+                <constraint firstItem="4Iy-aV-wGF" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="Eoi-1S-9XA"/>
                 <constraint firstAttribute="bottom" secondItem="wJp-I8-cKs" secondAttribute="bottom" constant="20" id="LGd-Ou-aEd"/>
-                <constraint firstItem="4Iy-aV-wGF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c22-O7-iKe" secondAttribute="leading" constant="102" id="OUH-fG-hcI"/>
-                <constraint firstItem="wJp-I8-cKs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c22-O7-iKe" secondAttribute="leading" constant="106" id="PCA-fK-uGg"/>
-                <constraint firstAttribute="trailing" secondItem="wJp-I8-cKs" secondAttribute="trailing" constant="107" id="Z7O-nw-nOh"/>
-                <constraint firstAttribute="trailing" secondItem="4Iy-aV-wGF" secondAttribute="trailing" constant="102" id="gpD-r1-fBk"/>
+                <constraint firstItem="wJp-I8-cKs" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="W3v-P6-e8q"/>
             </constraints>
             <point key="canvasLocation" x="139" y="154.5"/>
         </customView>
