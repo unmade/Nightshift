@@ -1,6 +1,6 @@
 # Nightshift
 
-This Safari extension applies darkmode for selected websites
+This Safari extension applies darkmode for websites
 
-![preview](https://i.imgur.com/kPir93z.png)
+![preview](https://i.imgur.com/rX5letn.png)
 
