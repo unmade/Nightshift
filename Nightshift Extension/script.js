@@ -8,6 +8,7 @@ const STYLES = {
     "": "dark.css",
     "github.com": "github-dark.css",
     "google.com": "google-dark.css",
+    "youtube.com": "youtube-dark.css",
 }
 
 
