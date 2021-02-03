@@ -47,7 +47,8 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
                     /* update has to be done on the main thread
                        https://stackoverflow.com/a/60144786/11717191 */
                     DispatchQueue.main.async {
-                        if let host = properties?.url?.host {
+                        if let url = properties?.url, let hostname = url.host {
+                            let host = ((url.port) != nil) ? "\(hostname):\(url.port!)" : hostname
                             SafariExtensionViewController.shared.host = host
                             SafariExtensionViewController.shared.darkMode = !self.isHostExcluded(host)
                             SafariExtensionViewController.shared.onDarkModeOn = { () -> Void in

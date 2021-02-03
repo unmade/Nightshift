@@ -36,7 +36,7 @@ function setDarkMode(mode) {
     ];
 
     if (mode === true) {
-        document.getElementsByTagName("html")[0].style.backgroundColor = "initial";
+        document.getElementsByTagName("html")[0].style.background = "initial";
         styles.map(style => addStylesheet(style));
     } else {
         styles.map(style => removeStylesheet(style));
